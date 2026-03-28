@@ -11,13 +11,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
-        android:weightSum="4"
+        android:weightSum="5"
         android:background="#7BDB99"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
 
         <ImageView
             android:id="@+id/imageView"
@@ -26,43 +32,76 @@
             android:layout_weight="1"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
             app:srcCompat="@drawable/outline_mobile_24"
             tools:layout_editor_absoluteY="2dp" />
 
 
         <LinearLayout
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
+            android:layout_width="241dp"
             android:layout_height="wrap_content"
+            android:layout_weight="3"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/masp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mã sp"
-                tools:layout_editor_absoluteX="67dp"
-                tools:layout_editor_absoluteY="113dp" />
 
-            <TextView
-                android:id="@+id/tensp"
-                android:layout_width="wrap_content"
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Tên sp"
-                tools:layout_editor_absoluteX="67dp"
-                tools:layout_editor_absoluteY="179dp" />
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Mã sp:" />
 
-            <TextView
-                android:id="@+id/gia"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/masp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="giá"
-                tools:layout_editor_absoluteX="190dp"
-                tools:layout_editor_absoluteY="392dp" />
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Tên sp:" />
+
+                <TextView
+                    android:id="@+id/tensp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Giá:" />
+
+                <TextView
+                    android:id="@+id/gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="giá" />
+            </TableRow>
+
+
+
+
 
         </LinearLayout>
+
+
 
     </LinearLayout>
 

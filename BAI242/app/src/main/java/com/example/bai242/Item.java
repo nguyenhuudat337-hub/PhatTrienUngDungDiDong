@@ -7,6 +7,8 @@ public class Item {
 
     private String gia;
 
+    private boolean ischecked = false;
+
     public Item(String masp, String tensp, String gia) {
         this.masp = masp;
         this.tensp = tensp;
@@ -35,5 +37,14 @@ public class Item {
 
     public void setGia(String gia) {
         this.gia = gia;
+    }
+
+
+    public boolean ischecked() {
+        return ischecked;
+    }
+
+    public void setchecked(boolean ischecked) {
+        this.ischecked = ischecked;
     }
 }

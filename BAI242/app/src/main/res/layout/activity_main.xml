@@ -103,20 +103,37 @@
             <TableRow
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right">
+                android:layout_height="wrap_content">
 
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_span="3"
+                    android:background="@drawable/style_button"
+                    android:text="Sửa sản phẩm"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
 
                 <Button
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:layout_span="6"
+                    android:layout_span="3"
                     android:background="@drawable/style_button"
                     android:text="Nhập SP"
                     android:textColor="@color/black"
                     app:backgroundTint="@null" />
+
 
             </TableRow>
         </TableLayout>
@@ -128,10 +145,41 @@
             android:layout_marginTop="5dp"
             android:background="#185B03"
             android:gravity="center"
-            android:text="Danh sách sản phẩm theo danh mục"
+            android:text="Danh sách sản phẩm"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+
+
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn tất cả" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                android:text="Xoá" />
+        </TableRow>
+
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -139,6 +187,7 @@
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
 
 
     </LinearLayout>
