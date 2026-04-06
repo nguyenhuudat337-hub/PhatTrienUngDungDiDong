@@ -13,7 +13,6 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     private List<QuanLyCV> list;
 
-
     public MyAdapter(List<QuanLyCV> list){
         this.list = list;
     }
